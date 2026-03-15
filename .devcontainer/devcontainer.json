@@ -21,7 +21,8 @@
         "editorconfig.editorconfig",
         "ms-python.python",
         "charliermarsh.ruff",
-        "astral-sh.ty"
+        "astral-sh.ty",
+        "ms-toolsai.jupyter"
       ],
       "settings": {
         "python.languageServer": "Pylance",

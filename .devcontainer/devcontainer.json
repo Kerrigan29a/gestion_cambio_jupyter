@@ -1,0 +1,32 @@
+{
+  "name": "python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:3-3.14-trixie",
+    "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "latest"
+    }
+  },
+  "onCreateCommand": "bash .devcontainer/onCreate.sh",
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig",
+      "target": "/home/vscode/.gitconfig",
+      "type": "bind"
+    }
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "astral-sh.ty"
+      ],
+      "settings": {
+        "python.languageServer": "Pylance",
+        "ty.disableLanguageServices": true
+      }
+    }
+  }
+}

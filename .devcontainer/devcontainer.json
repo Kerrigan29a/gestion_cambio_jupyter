@@ -1,6 +1,6 @@
 {
-  "name": "python 3",
-  "image": "mcr.microsoft.com/devcontainers/python:3-3.14-trixie",
+  "name": "python 3.10 (trixie)",
+  "image": "mcr.microsoft.com/devcontainers/python:3-3.10-trixie",
     "features": {
     "ghcr.io/devcontainers/features/git:1": {
       "ppa": true,

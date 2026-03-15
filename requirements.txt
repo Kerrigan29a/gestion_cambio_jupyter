@@ -1,4 +1,9 @@
 jupyterlab>3.0
+ipywidgets
+
+matplotlib
+scikit-learn
+pandas
+
 torch
 transformers[torch]
-ipywidgets
